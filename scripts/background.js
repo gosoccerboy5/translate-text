@@ -11,9 +11,11 @@ chrome.runtime.onInstalled.addListener(function() {
 
 chrome.contextMenus.onClicked.addListener(function(info, onClickData) {
     chrome.storage.sync.get("language", function({language}) {
-        chrome.tabs.sendMessage(onClickData.id, {
-            message: "openWindow",
-            url: `https://translate.google.com/?sl=auto&tl=${language}&text=${info.selectionText}&op=translate`
-        });
+        if (info.selectionText !== undefined) {
+            chrome.tabs.sendMessage(onClickData.id, {
+                message: "openWindow",
+                url: `https://translate.google.com/?sl=auto&tl=${language}&text=${info.selectionText}&op=translate`
+            });
+        }
     });
 });
