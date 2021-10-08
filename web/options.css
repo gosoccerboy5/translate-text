@@ -4,9 +4,11 @@ body {
     font-size: 1rem;
     background: powderblue;
 }
+
 h1 {
     font-weight: 400;
 }
+
 select {
     border: 2px solid black;
     border-radius: 3px;

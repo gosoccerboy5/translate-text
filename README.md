@@ -26,12 +26,12 @@ Try opening a new page or reloading a current page, then selecting some text and
 
 <img src="images/gt-window.png" width="500">
 
-(It will probably only work on non-Chrome pages, and only after you reload a page after downloading the extension.)
+(The extension, when downloaded or reloaded, will only apply to pages that have been reloaded or loaded since the extension was downloaded or reloaded.)
 
 <hr>
 
 # Questions? Concerns?
-Open an issue or contact me <a href="https://scratch.mit.edu/users/gosoccerboy5#comments">on Scratch</a>.
+Open an issue or discussion or contact me <a href="https://scratch.mit.edu/users/gosoccerboy5#comments">on Scratch</a>.
 
 <hr>
 
