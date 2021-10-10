@@ -4,7 +4,7 @@ chrome.runtime.onInstalled.addListener(function() {
         "id": "my-context-item",
         "contexts": ["selection"],
         "type": "normal",
-        "checked": true
+        "checked": true,
     });
     chrome.storage.sync.set({language: "en"});
 });
@@ -12,9 +12,11 @@ chrome.runtime.onInstalled.addListener(function() {
 chrome.contextMenus.onClicked.addListener(function(info, onClickData) {
     chrome.storage.sync.get("language", function({language}) {
         if (info.selectionText !== undefined) {
-            chrome.tabs.sendMessage(onClickData.id, {
-                message: "openWindow",
-                url: `https://translate.google.com/?sl=auto&tl=${language}&text=${info.selectionText}&op=translate`
+            chrome.windows.create({
+                url: `https://translate.google.com/?sl=auto&tl=${language}&text=${info.selectionText}&op=translate`,
+                type: "popup",
+                height: 500,
+                width: 1000,
             });
         }
     });

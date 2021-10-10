@@ -24,7 +24,7 @@ Click "Load Unpacked" in the top left, then select the directory that you downlo
 
 Try opening a new page or reloading a current page, then selecting some text and then right-clicking it. If you see an option that says "Translate text" in the right click menu, click it and it should open a Google Translate window.
 
-<img src="images/gt-window.png" width="500">
+<img src="images/popup-window.png" width="500">
 
 (The extension, when downloaded or reloaded, will only apply to pages that have been reloaded or loaded since the extension was downloaded or reloaded.)
 
