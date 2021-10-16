@@ -1,10 +1,9 @@
 chrome.runtime.onInstalled.addListener(function() {
     chrome.contextMenus.create({
         "title": "Translate text",
-        "id": "my-context-item",
+        "id": "translate-text",
         "contexts": ["selection"],
         "type": "normal",
-        "checked": true,
     });
     chrome.storage.sync.set({language: "en"});
 });
