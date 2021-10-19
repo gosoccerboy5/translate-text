@@ -1,16 +1,17 @@
 body {
-    width: 100px;
-    font-size: 1rem;
-    background: #dddddd;
+    width: 150px;
+    font-size: 5pt;
+    background: #000000;
 }
 
 a {
-    color: blue;
+    font-family: monospace;
+    color: white;
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
 }
 a:active {
-    color: red;
+    color: blue;
 }
